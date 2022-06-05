@@ -10,6 +10,8 @@ use DB;
 
 class OrderController extends Controller
 {
+
+    // add orders
     function addOrder(Request $req){
 
         $validator = Validator::make($req->all(), [
@@ -57,7 +59,7 @@ class OrderController extends Controller
         
     }
 
-       //get
+       //get orders
        function get(){
         
         return Order::all();

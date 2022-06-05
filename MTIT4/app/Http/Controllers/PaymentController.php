@@ -10,6 +10,7 @@ use DB;
 
 class PaymentController extends Controller
 {
+    //add payment
     function addPayment(Request $req){
 
         $validator = Validator::make($req->all(), [
@@ -55,7 +56,7 @@ class PaymentController extends Controller
         
     }
 
-    //get
+    //get payment
     function get(){
         
         return Payment::all();
