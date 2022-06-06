@@ -10,7 +10,7 @@ use DB;
 
 class PaymentController extends Controller
 {
-    
+    // add Payment
     function addPayment(Request $req){
 
         $validator = Validator::make($req->all(), [

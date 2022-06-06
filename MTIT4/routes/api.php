@@ -23,27 +23,27 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-    //User Management
+    //User Management CURD
     Route::post("addUser",[UserController::class,'addUser']);
     Route::get("get",[UserController::class,'get']);
     Route::put("updateUser",[UserController::class,'updateUser']);
     Route::delete("deleteUser",[UserController::class,'deleteUser']);
 
-    //product Management
+    //product Management CURD
     Route::post("addProduct",[ProductController::class,'addProduct']);
     Route::get("getProduct",[ProductController::class,'get']);
     Route::delete("deleteProduct",[ProductController::class,'deleteProduct']);
     Route::put("update",[ProductController::class,'updateProduct']);
 
 
-    //payment Management
+    //payment Management CURD
     Route::post("add",[PaymentController::class,'addPayment']);
     Route::get("getPayment",[PaymentController::class,'get']);
     Route::delete("deletePayment",[PaymentController::class,'deletePayment']);
     Route::put("updatePayment",[PaymentController::class,'updatePayment']);
 
 
-     //Order Management
+     //Order Management CURD
      Route::post("addOrder",[OrderController::class,'addOrder']);
      Route::get("getOrders",[OrderController::class,'get']);
      Route::delete("deleteOrder",[OrderController::class,'deleteOrder']);

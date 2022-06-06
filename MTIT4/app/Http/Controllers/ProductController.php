@@ -11,6 +11,8 @@ use DB;
 
 class ProductController extends Controller
 {
+
+    //add product
     function addProduct(Request $req){
 
         $validator = Validator::make($req->all(), [
@@ -54,7 +56,7 @@ class ProductController extends Controller
         }
         
     }
-        //get
+        //get products
         function get(){
         
             return Product::all();

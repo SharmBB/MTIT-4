@@ -11,6 +11,8 @@ use DB;
 
 class UserController extends Controller
 {
+
+    //add User
     function addUser(Request $req){
 
         $validator = Validator::make($req->all(), [
@@ -60,13 +62,14 @@ class UserController extends Controller
         
     }
 
-        //get
+        //get all users
         function get(){
         
             return User::all();
         }
 
 
+        //update users
         function updateUser(Request $req){
 
             $user = User::find($req->id);
