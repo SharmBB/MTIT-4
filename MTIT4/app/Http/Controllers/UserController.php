@@ -55,8 +55,8 @@ class UserController extends Controller
         if($result){
             return response([
                 'errorMessage'=>false,
-                'message'=>"User Added Sucessfully",
-                'user' => $result,
+                'message'=>"User Added Sucessfully"
+              //  'user' => $result,
             ]);
         }
         

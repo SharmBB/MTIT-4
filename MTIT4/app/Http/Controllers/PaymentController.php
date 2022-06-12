@@ -49,8 +49,8 @@ class PaymentController extends Controller
         if($result){
             return response([
                 'errorMessage'=>false,
-                'message'=>"Payment Added Sucessfully",
-                'product' => $result,
+                'message'=>"Payment Added Sucessfully"
+               // 'product' => $result,
             ]);
         }
         

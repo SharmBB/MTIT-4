@@ -52,8 +52,8 @@ class OrderController extends Controller
         if($result){
             return response([
                 'errorMessage'=>false,
-                'message'=>"Order Placed Sucessfully",
-                'product' => $result,
+                'message'=>"Order Placed Sucessfully"
+               // 'product' => $result,
             ]);
         }
         

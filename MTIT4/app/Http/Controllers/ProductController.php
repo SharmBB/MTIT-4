@@ -50,8 +50,8 @@ class ProductController extends Controller
         if($result){
             return response([
                 'errorMessage'=>false,
-                'message'=>"Product Added Sucessfully",
-                'product' => $result,
+                'message'=>"Product Added Sucessfully"
+              //  'product' => $result,
             ]);
         }
         
